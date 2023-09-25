@@ -322,7 +322,7 @@
   letter-spacing: 0.32px;
 } */
 
-.label-cover {
+/* .label-cover {
   display: flex;
   flex-direction: column;
 }
@@ -342,9 +342,9 @@
   outline: transparent;
   border: 1px solid var(--main-color);
   opacity: 0.3;
-}
+} */
 
-.subscribe-input:focus {
+/* .subscribe-input:focus {
   background-color: transparent;
 }
 
@@ -355,9 +355,9 @@
   font-weight: 400;
   line-height: 2;
   letter-spacing: 0.48px;
-}
+} */
 
-.button-subscribe {
+/* .button-subscribe {
   width: 165px;
   height: 40px;
   display: flex;
@@ -378,9 +378,9 @@
   text-align: center;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.button-subscribe:hover,
+/* .button-subscribe:hover,
 .button-subscribe:focus {
   background-color: var(--hover-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -388,7 +388,7 @@
 
 .subscribe-icon {
   margin-left: 16px;
-}
+} */
 
 /* .main-portfolio {
   background-color: var(--main-color);

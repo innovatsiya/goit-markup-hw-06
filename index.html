@@ -41,7 +41,7 @@
             </li>
           </ul>
         </nav>
-        <button class="mobile-menu-btn">
+        <button class="mobile-menu-btn" data-menu-open>
           <svg class="mobile-menu-icon" width="24" height="24">
             <use href="./css/images/icons.svg#icon-burger-menu"></use>
           </svg>
@@ -641,8 +641,8 @@
       </div>
     </div>
     <!-- Mobile Menu-->
-    <div class="mobile-menu">
-      <button class="close-btn-menu" type="button">
+    <div class="mobile-menu is-open" data-menu>
+      <button class="close-btn-menu " data-menu-close type="button">
         <svg
           class="close-menu-icon"
           width="8"
@@ -706,5 +706,6 @@
         </li>
       </ul>
     </div>
+   <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
