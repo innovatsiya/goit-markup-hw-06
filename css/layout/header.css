@@ -30,7 +30,6 @@
   color: var(--link-title-color);
 }
 
-
 /* .header-links {
   display: block;
   padding-left: 16px;
@@ -115,6 +114,15 @@
   gap: 24px;
 }
 
+.mob-address-links {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  color: var(--main-text-color);
+}
+
+
 .header-links {
   font-weight: 700;
   font-size: 36px;
@@ -125,6 +133,9 @@
 
 .header-links:hover,
 .header-links:focus {
+  color: var(--hover-color);
+}
+.active {
   color: var(--hover-color);
 }
 
@@ -148,16 +159,6 @@
   flex-direction: column;
   align-items: center;
   gap: 24px;
-}
-
-.address-links {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #434455;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-links:hover,
@@ -200,21 +201,15 @@
   .address-links,
   .address-items {
     display: block;
-    font-family: Roboto;
-    font-style: normal;
+
     font-size: 12px;
     line-height: 1.17;
     color: var(--main-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .address {
-    display: flex;
-    color: var(--main-text-color);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    text-decoration: none;
-    flex-shrink: 0;
+    display: block;
+    font-style: normal;
   }
 
   .address-list {
@@ -244,6 +239,11 @@
     gap: 40px;
     text-decoration: none;
   }
+
+  .mobile-menu {
+    display: none;
+  }
+
   .mobile-menu-btn {
     display: none;
   }
@@ -341,16 +341,7 @@
 
 /*======DESKTOP======*/
 
-@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
-  screen and (min-resolution: 2dppx) and (min-width: 1158px),
-  screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
-  .hero {
-    padding-bottom: 112px;
-    padding-top: 112px;
-    background-image: (rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url("../images/desktop-bg@2x.jpg");
-  }
-}
+
 
 @media screen and (min-width: 1158px) {
   .header {
@@ -486,6 +477,10 @@
 
   .section-our-portfolio {
     padding: 120px 0px;
+  }
+
+  .portfolio-list {
+    row-gap: 48px;
   }
 
   .portfolio-list-icons {

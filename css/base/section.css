@@ -21,8 +21,11 @@
   screen and (min-resolution: 2dppx) and (min-width: 320px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
   .hero {
-    background-image: (rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url("../images/mobile-bg@2x.jpg");
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/mobile-bg@2x.jpg");
   }
 }
 
@@ -65,8 +68,8 @@
 }
 
 .section-benefits {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .benefits-list {
@@ -99,7 +102,7 @@
 }
 
 .section-team {
-  padding: 120px 0;
+  padding: 96px 0;
   background: var(--btn-color);
 }
 
@@ -196,7 +199,7 @@
 }
 
 .section-our-portfolio {
-  padding: 120px 0 120px;
+  padding: 96px 0 96px;
   background-color: var(--main-color);
 }
 
@@ -276,16 +279,6 @@
 
 /*=================TABLET===============*/
 
-@media screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px),
-  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-  .hero {
-    padding-bottom: 112px;
-    padding-top: 112px;
-    background-image: (rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url("../images/tablet-bg@2x.jpg");
-  }
-}
 
 @media screen and (min-width: 768px) {
   .hero {
@@ -315,6 +308,10 @@
     flex-basis: calc((100% - 48px) / 2);
   }
 
+  .benefits-items-name {
+    text-align: left;
+  }
+
   .section-team {
     padding: 96px 0;
   }
@@ -331,11 +328,25 @@
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
-    row-gap: 48px;
+    row-gap: 72px;
   }
 
   .portfolio-list-icons {
     width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .hero {
+    padding-bottom: 112px;
+    padding-top: 112px;
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/tablet-bg@2x.jpg");
   }
 }
 
@@ -350,7 +361,18 @@
       url("../images/desktop-bg.jpg");
   }
 }
-
+@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+  screen and (min-resolution: 2dppx) and (min-width: 1158px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+  .hero {
+ 
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/desktop-bg@2x.jpg");
+  }
+}
 
 /* .hero {
     max-width: 1440px;
